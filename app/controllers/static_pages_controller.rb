@@ -1,7 +1,13 @@
 class StaticPagesController < ApplicationController
-  def home
+  #StaticPagesController is a Ruby class
+
+
+  def home #It's a page
   end
 
-  def help
+  def help #it's a page
+  end
+
+  def about
   end
 end
