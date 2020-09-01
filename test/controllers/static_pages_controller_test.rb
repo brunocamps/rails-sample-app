@@ -1,9 +1,9 @@
 require 'test_helper'
 
-class StaticPagesControllerTest < ActionDispatch::IntegrationTest
+class StaticPagesControllerTest < ActionDispatch::IntegrationTest 
 
   def setup
-    @base_title = "Ruby on Rails Tutorial Sample app"
+    @base_title = "Ruby on Rails Tutorial Sample app" // ok
   end
 
 
@@ -22,8 +22,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get about" do
     get static_pages_about_url
     assert_response :success
-    assert_select "title", "About | #{@base_title}" #this will inspect HTML
-    
+    assert_select "title", "About | #{@base_title}" #this will inspect HTML 
   end
 
 end
